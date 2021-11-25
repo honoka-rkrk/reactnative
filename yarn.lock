@@ -1454,6 +1454,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@use-expo/font@^2.0.0":
+  "integrity" "sha512-oOJ2uaRyZNQg7PnQviz7nBcdrRL38zxScab4ktgtI4asa6G0dHW9wg307uJJmn0sHS04Yqtw+m0EOjDcGw3iWg=="
+  "resolved" "https://registry.npmjs.org/@use-expo/font/-/font-2.0.0.tgz"
+  "version" "2.0.0"
+
 "@xmldom/xmldom@~0.7.0":
   "integrity" "sha512-V3BIhmY36fXZ1OtVcI9W+FxQqxVLsPKcNjWigIaa81dLC9IolJl5Mt4Cvhmr0flUnjSpTdrbMTSbXqYqV5dT6A=="
   "resolved" "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.5.tgz"
@@ -2873,7 +2878,7 @@
     "expo-modules-core" "~0.4.4"
     "uuid" "^3.4.0"
 
-"expo-font@~10.0.3":
+"expo-font@>=8.1.0", "expo-font@~10.0.3":
   "integrity" "sha512-xM5oqIduGvJ+qbsZHjMNNt+3hhjOMTunHUtOx5rAmW/D1ZVdfLwjDwOyWBVkH8ChoBRAZy9gsC2cRs7naw8NIw=="
   "resolved" "https://registry.yarnpkg.com/expo-font/-/expo-font-10.0.3.tgz"
   "version" "10.0.3"
