@@ -13,6 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "no-use-before-define": 0
+    "no-use-before-define": 0,
+    "react/prop-types":["error",{"ignore":["navigation"]}]
   }
 }
