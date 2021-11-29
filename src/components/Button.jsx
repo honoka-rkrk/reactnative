@@ -1,12 +1,12 @@
 /* eslint-disable */
 import React from 'react';
 import {View,Text,StyleSheet,TouchableOpacity} from 'React-native';
-import {string,func} from 'prop-types';
+import {string,func,shape} from 'prop-types';
 
 export default function Button(props){
-    const {label,onPress} = props;
+    const {label,onPress,style} = props;
     return(
-        <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
+        <TouchableOpacity style={[styles.buttonContainer,style]} onPress={onPress}>
             <Text style={styles.buttonLabel}>{label}</Text>
         </TouchableOpacity>
     );
@@ -15,11 +15,13 @@ export default function Button(props){
 Button.propTypes = {
     label:string.isRequired,
     onPress:func,
+    style:shape(),
 };
 
 Button.defaultProps = {
     onPress :null,
-}
+    style:null,
+};
 
 const styles = StyleSheet.create({
     buttonContainer:{
