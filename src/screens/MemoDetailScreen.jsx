@@ -18,8 +18,7 @@ export default function MemoDetailScreen(props) {
     if(currentUser){
       const db = firebase.firestore();
       const ref = db.collection(`users/${currentUser.uid}/memos`).doc(id);
-      const unsubscribe = ref.onSnapshot((doc) => {
-        console.log(doc.id,doc.data());
+      unsubscribe = ref.onSnapshot((doc) => {
         const data=doc.data();
         setMemo({
           id:doc.id,
